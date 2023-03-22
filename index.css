@@ -1,17 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
 
-* {
+html {
     color: #F7F0F0;
-    font-family: 'Playfair Display', serif;
-    background-color: #D81E5B;
+    background: hsla(89, 60%, 87%, 1);
+    background: linear-gradient(90deg, hsla(89, 60%, 87%, 1) 0%, hsla(34, 86%, 58%, 1) 0%, hsla(335, 81%, 65%, 1) 93%);
+    background: -moz-linear-gradient(90deg, hsla(89, 60%, 87%, 1) 0%, hsla(34, 86%, 58%, 1) 0%, hsla(335, 81%, 65%, 1) 93%);
+    background: -webkit-linear-gradient(90deg, hsla(89, 60%, 87%, 1) 0%, hsla(34, 86%, 58%, 1) 0%, hsla(335, 81%, 65%, 1) 93%);
     font-size: 110%;
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#links > * {
+    padding: 5%;
 }
 
 .wrapper {
-    height: 100vh;
+    height: 70vh;
     /*This part is important for centering*/
     display: grid;
     place-items: center;
+    width: 100%;
 }
 
 .typing-demo {
